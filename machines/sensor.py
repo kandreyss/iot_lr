@@ -8,7 +8,6 @@ class Sensor(Machine):
         self.value = 0
 
     def read_value(self):
-        # Генерация случайного значения для примера
         self.value = round(random.uniform(20, 100), 2)
         print(f"Sensor {self.name} ({self.sensor_type}) reads {self.value}")
         return self.value
